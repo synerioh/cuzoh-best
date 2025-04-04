@@ -24,3 +24,36 @@ body{
     font-weight: 500;
     position: relative;
 }
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: rgb(216, 160, 221)
+}
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2- 20px);
+
+}
+.container form .user-details .input-box .details{
+    display: block;
+font-weight: 500;
+margin-bottom: 5px;
+}
+.container form .user-details .input-box input{
+    height: 40px;
+    width: 100;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 15px;
+}
